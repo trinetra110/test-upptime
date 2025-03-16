@@ -1,27 +1,33 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: trinetra110 # Your GitHub organization or username, where this repository lives
+repo: test-upptime # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
+  - name: IHR
+    url: https://www.ihr.live
+  - name: IHR Global Report
+    url: https://www.ihr.live/en/global-report
+  - name: IHR API website
+    url: https://www.ihr.live/en/api
+  - name: IHR API /countries
+    url: www.ihr.live/ihr/api/countries
+  - name: IHR Archive
+    url: https://archive.ihr.live
+  - name: IYP
+    url: https://iyp.iijlab.net
+  - name: IYP Database
     check: "tcp-ping"
-    ipv6: true
+    url: iyp-bolt.iijlab.net
+    port: 443
+  - name: IHR archive global hegemony IPv4 files
+    url: https://archive.ihr.live/ihr/hegemony/ipv4/global/2020/01/01/
+    __dangerous__body_down_if_text_missing: '.csv.lz4'
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
   # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
+  # cname: demo.upptime.js.org
+  baseUrl: /test-upptime
   logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
   name: Upptime
   introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
@@ -31,6 +37,8 @@ status-website:
       href: /
     - title: GitHub
       href: https://github.com/$OWNER/$REPO
+    - title: JSON
+      href: https://raw.githubusercontent.com/$OWNER/$REPO/refs/heads/master/history/summary.json
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
