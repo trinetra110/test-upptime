@@ -6,7 +6,7 @@ sites:
   - name: IHR
     url: https://www.ihr.live
   - name: IHR Global Report
-    url: https://www.ihr.live/en/global-report/*
+    url: https://www.ihr.live/en/global-reportKLAMXLKan/
   - name: IHR API website
     url: https://www.ihr.live/en/api
   - name: IHR API /countries
