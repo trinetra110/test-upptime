@@ -22,6 +22,9 @@ sites:
   - name: IHR archive global hegemony IPv4 files
     url: https://archive.ihr.live/ihr/hegemony/ipv4/global/2020/01/01/
     __dangerous__body_down_if_text_missing: '.csv.lz4'
+  - name: IHR countries API
+    url: www.ihr.live/ihr/api/countries
+    __dangerous__body_down_if_text_missing: '"count":'
 
 status-website:
   # Add your custom domain name, or remove the `cname` line if you don't have a domain
