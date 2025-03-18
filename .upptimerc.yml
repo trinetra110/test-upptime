@@ -29,7 +29,6 @@ sites:
   - name: IHR archive IYP files
     url: https://archive.ihr.live/ihr/iyp/2025/02/08/
     __dangerous__body_down_if_text_missing: '.dump'
-    __dangerous__body_down_if_text_missing: '.log'
 
   # IHR API endpoints
   - name: IHR countries API
