@@ -19,9 +19,19 @@ sites:
     check: "tcp-ping"
     url: iyp-bolt.iijlab.net
     port: 443
+
+  # IHR archive hegemony files
   - name: IHR archive global hegemony IPv4 files
     url: https://archive.ihr.live/ihr/hegemony/ipv4/global/2020/01/01/
     __dangerous__body_down_if_text_missing: '.csv.lz4'
+
+  # IHR archive IYP files
+  - name: IHR archive IYP files
+    url: https://archive.ihr.live/ihr/iyp/2025/02/08/
+    __dangerous__body_down_if_text_missing: '.dump'
+    __dangerous__body_down_if_text_missing: '.log'
+
+  # IHR API endpoints
   - name: IHR countries API
     url: www.ihr.live/ihr/api/countries
     __dangerous__body_down_if_text_missing: '"count":'
